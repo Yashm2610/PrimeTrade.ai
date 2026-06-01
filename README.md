@@ -59,3 +59,5 @@ streamlit run app.py
 * `analysis_output.txt`: Captured numeric logs and statistical test outputs of the run.
 * `charts/`: Folder containing saved visualization figures.
 * `bitcoin_market_sentiment.csv`: The processed Bitcoin Fear & Greed index historical data.
+
+* Added dynamic charts and statistical testing features
