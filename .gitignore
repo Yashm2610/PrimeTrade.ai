@@ -1,0 +1,13 @@
+# Datasets
+historical_trader_data.csv
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and system files
+.streamlit/
+.idea/
+.vscode/
+.DS_Store
