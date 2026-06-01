@@ -40,3 +40,5 @@ if __name__ == "__main__":
             download_file_from_google_drive(file_id, filename)
         else:
             print(f"File {filename} already exists. Skipping download.")
+
+# Refactored downloader file verification check block
