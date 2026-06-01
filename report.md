@@ -136,3 +136,5 @@ Based on these findings, we propose three core trading strategies to drive smart
 ### Strategy 3: Dynamic Stop-Loss Adjustment by Sentiment
 - **Problem**: During Extreme Fear, traders suffer a high frequency of stop-outs (win rate drops to 65.4%), but winning trades are highly explosive.
 - **Solution**: Under Extreme Fear conditions, traders should **widen take-profit targets** to capture the massive rebound spikes, while using **tighter or trailing stop-losses** to mitigate the risk of catching a falling knife. During Greed conditions, since the win rate is high (81-88%) but average PnL is low, traders should employ **tight take-profit targets** to lock in small, steady gains before reversals occur.
+
+<!-- Finalized report formatting and ANOVA data tables -->
