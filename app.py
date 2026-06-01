@@ -497,3 +497,5 @@ with tab_report:
         st.markdown(report_content)
     else:
         st.error("report.md not found in the directory. Please make sure report.md is generated first.")
+
+# styled layout grid and card spacing
