@@ -1,0 +1,64 @@
+============================================================
+  BITCOIN MARKET SENTIMENT VS TRADER PERFORMANCE ANALYSIS
+============================================================
+Analysis Period: 2023-05-01 to 2025-05-01
+Total days analyzed (Overall): 479
+Total days analyzed (BTC-Only): 286
+
+
+1. PEARSON CORRELATION ANALYSIS (VS SENTIMENT SCORE)
+------------------------------------------------------------
+Metric               | Overall Corr | Overall p-val | BTC-Only Corr | BTC p-val 
+------------------------------------------------------------
+total_pnl            |      -0.0826 |    7.0751e-02 |      -0.1528 | 9.6413e-03
+mean_pnl             |       0.0373 |    4.1517e-01 |       0.0263 | 6.5732e-01
+median_pnl           |       0.0142 |    7.5711e-01 |      -0.0377 | 5.2512e-01
+total_volume         |      -0.2644 |    4.2082e-09 |      -0.2197 | 1.8072e-04
+mean_volume          |      -0.0518 |    2.5762e-01 |      -0.1921 | 1.0928e-03
+trade_count          |      -0.2452 |    5.4311e-08 |      -0.2477 | 2.2732e-05
+win_rate             |       0.0554 |    2.5785e-01 |       0.0228 | 7.1608e-01
+long_open_ratio      |      -0.1462 |    1.8747e-03 |      -0.0854 | 1.6153e-01
+buy_ratio            |      -0.0494 |    2.8031e-01 |      -0.0511 | 3.8910e-01
+total_fee            |      -0.2609 |    6.7687e-09 |      -0.2130 | 2.8550e-04
+
+
+2. MEAN PERFORMANCE BY SENTIMENT CLASSIFICATION
+------------------------------------------------------------
+
+--- OVERALL HYPERLIQUID TRADING ---
+                    total_pnl  win_rate  total_volume  trade_count  long_open_ratio    total_fee
+sentiment_class                                                                                 
+Extreme Fear     52793.589178  0.654433  8.177447e+06  1528.571429         0.667494  1706.330996
+Fear             36891.818040  0.880714  5.311261e+06   679.527473         0.632426  1016.010425
+Neutral          19297.323516  0.793790  2.690180e+06   562.477612         0.596895   587.675646
+Greed            11140.566181  0.813021  1.495246e+06   260.637306         0.519635   326.936228
+Extreme Greed    23817.292199  0.886533  1.091800e+06   350.807018         0.492494   237.111101
+
+ANOVA Test p-values (Testing difference across classes):
+  total_pnl            : F-stat = 2.7913, p-value = 2.5911e-02
+  win_rate             : F-stat = 4.4425, p-value = 1.5863e-03
+  total_volume         : F-stat = 10.9034, p-value = 1.8270e-08
+  trade_count          : F-stat = 12.4909, p-value = 1.1430e-09
+  long_open_ratio      : F-stat = 2.5982, p-value = 3.5723e-02
+
+--- BTC-ONLY TRADING ---
+                   total_pnl  win_rate  total_volume  trade_count  long_open_ratio    total_fee
+sentiment_class                                                                                
+Extreme Fear      254.736693  0.677024  3.062627e+06   147.083333         0.781666   805.781002
+Fear             8618.743644  0.850728  5.373431e+06   176.250000         0.747351  1030.693389
+Neutral          3531.496715  0.834495  2.093334e+06   101.127660         0.693158   455.316952
+Greed            1121.118365  0.772462  1.595144e+06    70.291262         0.626062   362.653990
+Extreme Greed    1483.569281  0.843467  6.453225e+05    35.823529         0.661943   192.393638
+
+ANOVA Test p-values (Testing difference across classes):
+  total_pnl            : F-stat = 4.0598, p-value = 3.2370e-03
+  win_rate             : F-stat = 1.1562, p-value = 3.3073e-01
+  total_volume         : F-stat = 5.0698, p-value = 5.8542e-04
+  trade_count          : F-stat = 5.8403, p-value = 1.5788e-04
+  long_open_ratio      : F-stat = 1.1024, p-value = 3.5583e-01
+
+
+Generated Chart 1: daily_pnl_by_sentiment.png
+Generated Chart 2: trading_activity_by_sentiment.png
+Generated Chart 3: long_open_ratio_by_sentiment.png
+Generated Chart 4: sentiment_trends.png
