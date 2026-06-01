@@ -501,3 +501,5 @@ with tab_report:
 # styled layout grid and card spacing
 
 # closed matplotlib plots to release memory resources
+
+# Auto-download missing datasets on startup
