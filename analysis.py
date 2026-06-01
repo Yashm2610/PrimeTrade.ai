@@ -276,3 +276,5 @@ log_print("Generated Chart 4: sentiment_trends.png")
 
 log_file.close()
 print("Analysis complete. Check analysis_output.txt for results.")
+
+# Added descriptive docstrings for statistical metrics calculation
