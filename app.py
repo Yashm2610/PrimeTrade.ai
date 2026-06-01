@@ -499,3 +499,5 @@ with tab_report:
         st.error("report.md not found in the directory. Please make sure report.md is generated first.")
 
 # styled layout grid and card spacing
+
+# closed matplotlib plots to release memory resources
